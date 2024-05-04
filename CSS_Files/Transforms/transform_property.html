@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .box{
+            margin: 55px;
+            height: 80vh;
+            width:  80vw;
+            border: 2px solid red;
+        }
+
+        /* These properties are used to transform object or an element in 2d or in 3d */
+        .item{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            text-align: center;
+            /* This property is used to rotate element through degrees */
+            transform: rotate(43deg);
+            /* This property is used to rotate elements through turn (this is 40 degrees rotation through turn)             */
+            /* transform: rotate(0.125turn); */
+            /* These properties are used to rotate through their axis */
+            /* transform: rotateX(23deg);
+            transform: rotateY(30deg);
+            transform: rotateZ(23deg); */
+            /* These property is used to scale element */
+            /* There is no any property for Y axis in scale */
+            /* transform: scale(1.6);
+            transform: scaleX(1.6);
+            transform: scaleY(1.6);
+            transform: scale3d(1.6); */
+            /* These properties are used to skew(tilt) element */
+            /* transform: skew(23deg);
+            transform: skewX(26deg);
+            transform: skewY(26deg); */
+            /* These properties are used to translate element */
+            /* transform: translate(23%); 
+            transform: translateX(23%);
+            transform: translateY(23%);
+            transform: translateZ(53%); */
+            /* These property is used to translate and skew element */
+            /* transform: translate(23%) skew(23deg) translate(23%); */
+            /* This property is used to set origin where the element going to rotate and this is built in property with (-50%,-50%) */
+            /* transform: origin(-50%,-50%); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+            box
+        </div>
+    </div>
+</body>
+</html>

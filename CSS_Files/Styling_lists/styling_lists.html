@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Styling</title>
+    <style>
+        nav ul li {
+            /* list-style: ; property is used to remove disc to another language numbering */
+            list-style: devanagari;
+            /* list-style-type: ; property is also used to remove disc with emoji */
+            list-style-type: "🔥";
+            /* This property is used to move position of list style in inside */
+            list-style-position: inside;
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* There are two ways to remove disc to image */
+            /* First through list-style: ; property  */
+            list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+            /* Second through list-style-image: ; property */
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

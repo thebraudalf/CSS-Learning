@@ -1,0 +1,57 @@
+.cont {
+    width: 30vw;
+    height: 80vh;
+    background-color: aquamarine;
+}
+
+/* Animation properties are just like transition properties which is used to animate elements */
+/* There are two ways to write animation properties */
+.box {
+    width: 32px;
+    height: 23px;
+    /* First Way */
+    /* animation-name: animation_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.37, 0.3);
+    animation-delay: 3s;
+    animation-direction: reverse;
+    animation-play-state: paused; */
+    /* Second Way */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animation_1 2s cubic-bezier(0.42, 0, 0.37, 0.3) 3s 3 alternate, 
+               animation_2 3s cubic-bezier(0.42, 0, 0.37, 0.3) 3s 3 alternate;
+}
+
+/* Here we make animation frame by frame */
+@keyframes animation_1 {
+    from {
+        background-color: brown;
+    }
+
+    to {
+        background-color: chartreuse;
+    }
+}
+
+@keyframes animation_2 {
+    0% {
+        transform: rotate(100deg);
+    }
+
+    20% {
+        transform: rotate(200deg);
+    }
+
+    50% {
+        transform: rotate(220deg);
+    }
+
+    80% {
+        transform: rotate(300deg);
+    }
+
+    100% {
+        transform: rotate(310deg);
+    }
+}

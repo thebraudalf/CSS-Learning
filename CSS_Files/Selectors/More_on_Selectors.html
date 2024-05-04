@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color: rgb(238, 51, 51);
+            --seccolor: rgb(51, 159, 51);
+            --textcolor: rgb(42, 42, 144);
+        }
+        /* There are more selectors other than we discussed before */
+        
+        /* This type of selectors are used for whole selected or class, id and other type of elements  */
+        .boxes *{
+            color: var(--textcolor);
+            border: 2px solid black;
+        }
+
+        /* This type of selectors are used to change first child of element */
+        /* .box:first-child{
+            background-color: var(--color);
+        } */
+
+        /* This selector is used to change in first line of a element */
+        /* .box::first-line{
+            color: var(--seccolor);
+        } */
+
+        /* [data-color="primary"] this type of selectors are known as attribute selectors */
+        .box,a,b [data-color="primary"]{
+            padding: 6px;
+        }
+
+        /* This tpe of selector is used to do change in after first child in brackets () we can write even or odd or any element's position */
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+        /* .box:nth-child(3){
+            background-color: blueviolet;
+        } */
+
+        /* This type of selector is work as reverse of element:nth-child() */
+        .box:nth-last-child(3){
+            background-color: cadetblue;
+        }
+
+        /* This type of selectors is edit change before in element */
+        .boxes::before{
+            content: "You are bissaree";
+        }
+
+        /* This type of selectors is edit change after in element */
+        .boxes::after{
+            content: "You are beautiful";
+            padding: 6px;
+        }
+
+        /* This type of selector is used to select content in web page */
+        ::selection{
+            background-color: black ;
+            color: aqua;
+        }
+
+        /* This type of selectors is used to do change in first letter in web page */
+        .box::first-letter{
+            font-size: 33px;
+        }
+
+        /* This type of selector is used to do change in input tag */
+        input::placeholder{
+            color: var(--color);
+        }
+    </style>
+ </head>
+ <body>
+    <div class="boxes">
+        <div data-color="primary" class="box">You are awosome</div>
+        <div class="box">You are great</div>
+        <div class="box">You are genious</div>
+        <input type="text" placeholder="Enter you name here">
+    </div>
+ </body>
+</html>

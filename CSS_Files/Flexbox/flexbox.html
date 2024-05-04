@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* Flex box is used to flex content or item  */
+        /* Generally 99% properties which are written below is used in making websites */
+        /* Here these flex properties are only used for content */
+        .cont{
+            border: 2px solid black;
+            height: 80vh;
+            /* This property is used to flex elements */
+            display: flex;
+            /* This property is used to center elements horizontally */
+            justify-content: center;
+            /* This property is used to center elements vertically */
+            align-items: center;
+            /* flex-direction: property is used to lay flex elements column to row or row to column through main axis or cross axis*/
+            /* This property is used to flex item row to column */
+            /* flex-direction: column; */
+            /* This property is used to wrap flex iteams */
+            flex-wrap: wrap;
+            /* This property is used to align content in starting of flex */
+            /* align-content: flex-start; */
+            /* there is no justify-items  in flexbox; */
+            /* This property is used to to wrap flex content */
+            flex-flow: row wrap;
+            /* This property is used to give gap between items */
+            /* There are four ways to give gaps between coloums and rows */
+            /* gap: 30px; */
+            /* row-gap: 22px;
+            column-gap: 23px; */
+            /* gap: 30px 10px; */
+            
+        }
+
+        /* Here these flex properties are used only for items */
+        .item{
+            border: 2px solid black;
+            height: 92px;
+            width: 92px;
+            /* margin: 4px; */
+            background-color: red;
+        }
+
+        /* These property is used to give order like we give order 1 so element of this order put in the last first and others are before 1st order */
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }        
+
+       .item1{
+        /* This property is used to give spaces in particular elements  */
+        /* flex-grow: 10; */
+        /* This property is used to take spaces in particular elements */
+        /* flex-shrink: 10 ; */
+        /* This property is used to align particular element  */
+        align-self: flex-end;
+       } 
+    </style>
+</head>
+<body>
+    <main>
+    <div class="cont">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item order-2">3</div>
+        <div class="item order-1">4</div>
+        <div class="item"></div>
+        <div class="item order-1">66</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    </main>
+</body>
+</html>

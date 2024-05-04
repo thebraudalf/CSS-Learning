@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Here I explain the box model of css  */
+        *{
+            /* Margin properties */
+            margin: 0;
+            /* Padding properties */
+            padding: 0; 
+        }
+
+        .container{
+            background-color: blueviolet;
+        }
+
+        .container1{
+            color: red;
+            margin: 33px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 300px;
+            /* The box-sizing property allows us to include the padding and border in an element's total width and total height. */
+            box-sizing: border-box;
+            
+        }
+
+        .container2{
+            color: chocolate;
+            margin: 33px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 200px;
+             box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container container1">Everything is fair in love and war</div>
+    <div class="container container2">No, man you don't know anything</div>
+</body>
+</html>

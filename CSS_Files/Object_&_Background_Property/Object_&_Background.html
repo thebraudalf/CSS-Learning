@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and background</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 60vw;
+            /* background-color: aquamarine; */
+            /* These properties are used to set background image */
+            background-image: url(https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6);
+            /* This property is used to align or positioned the background image */
+            /* background-position: center center ; */
+            /* This property is used not to or axis wise repeat background images multilple times */
+            background-repeat: no-repeat;
+            /* This property is used to set background clip  */
+            background-clip: border-box;
+            
+        }
+
+        img{
+            height: 233px;
+            width: 234px;
+            /* These properties is used to fit or set image */
+            /* object-fit: cover; */
+            object-fit: contain;
+            /* object-fit: fill; */
+            /* These properties are used to set position of image */
+            /* object-position: 10px 20px; */
+            object-position: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://us.123rf.com/450wm/progressman/progressman1909/progressman190900115/130695651-woman-in-black-coat-walking-along-the-sea.jpg?ver=6" alt="Woman who see"> -->
+    </div>
+</body>
+</html>

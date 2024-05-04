@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <!-- This is one of the concept which works similar like associativity and precedence in programming languages
+    In this Inline style > Id selectors > attribute selectors/Class selectors > Element Selectors > Universal Selectors
+Giving no.     1000           100                           10                         1                    0                           -->
+   <style>
+    /* Specificity is 1 */
+    h1{
+        color: blue;
+    }
+    /* Specificity is 10 */
+    .red{
+        color: red;
+    }
+    /* Specificity is 1 + 10 */
+    h1.green{
+        color: green;
+    }
+    /* Specificity is more than class or an element */
+    .yellow{
+        color: yellow ! important;
+    }
+    .purple{
+    color: purple;
+    }
+
+   </style>
+</head>
+<body>
+    <h1 class="red purple green yellow">This is an heading</h1>    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+/* Media Query is used to show website to other devices you can do this with some little css features */
+         /* @media not|only mediatype and (expressions) {} */
+            @media only screen and (max-width: 622px){
+                body{
+                    background-color: green;
+                }
+
+                .boxes{
+                    flex-direction: column;
+                }
+            }
+
+            @media  screen and (orientation: potrait) {
+                .box{
+                    border: 2px solid black;
+                }
+            }
+
+            .boxes{
+                display: flex;
+            }
+
+            .box{
+                    width: 233px;
+                    height: 231px;
+                    margin: 2px;
+                    padding: 3px;
+                    background-color: steelblue;
+                }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 233px;
+            width: 45vw;
+            padding: 3px;
+            margin: 3px;
+        }
+
+        .box1 {
+            background-color: aqua;
+            /* This property is used to change static position */
+            /* Through this you can change its top, bottom and z-index height and width */
+            /* position: relative;
+            z-index: 1;
+            top: 0px; */
+            /* Through this you can give position to parent relative */
+            /* position: absolute;
+            top: 0px;
+            left: 3px; */
+            /* This property is used to stick the element through top or bottom */
+            /* position:sticky;
+            top: 0px;
+            margin: 0px;
+            padding: 0px;
+            height: 111px;
+            width: 100%; */
+
+        }
+
+        .box2 {
+            background-color: yellowgreen;
+            /* position:relative;
+            bottom: 43px;
+            left: 34px; */
+            /* This property is used to fixed the element  */
+            /* position:fixed; */
+        }
+
+        .box3 {
+            background-color: blueviolet;
+        }
+
+        .box4 {
+            background-color: brown;
+        }
+
+        .parent {
+            border: 3px solid black;
+            margin: 43px;
+            padding: 34px;
+            position: absolute;
+
+            /* There are more other properties alternate of absolute property */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0em; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> </div>
+        <div class="box box2"> </div>
+        <div class="box box3"> </div>
+        <div class="box box4"> </div>
+    </div>
+</body>
+
+</html>

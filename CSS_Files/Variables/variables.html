@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <style>
+        /* If we want to create a variable in css like programming languages the creation of variables goes like */
+        :root{
+            --color : rgb(92, 92, 166);
+            --seccolor : rgb(211, 131, 131);
+            --defpadd : 15px;
+            --defop : 0.6;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* To use variable which you created before then "var(var_name)"  */
+        .navg{
+            background-color: var(--color);
+        }
+        
+        /* Here we use other variables */
+        ul li{
+            list-style: none;
+            opacity: var(--defop);
+            padding: var(--defpadd);
+            /* If the variable is not created like before then you can write other use type in property  */
+            border: 2px solid var(--secolor,black);
+        }
+        
+        ul{
+            display: flex;
+        }
+
+        ul li:first-child{
+            background-color:var(--seccolor);
+        }
+
+        div{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="navg">
+        <ul>
+            <li>Apna</li>
+            <li>Tumhara</li>
+            <li>Sabka</li>
+            <li>Kiska</li>
+        </ul>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dicta vitae, fugit eum asperiores deleniti voluptatum obcaecati debitis voluptatem nulla aliquid quam voluptas ratione harum, magnam odio earum voluptates impedit omnis quod reprehenderit consequuntur dignissimos rem. Atque similique alias vel sapiente quia nihil.
+    </div>
+</body>
+</html>

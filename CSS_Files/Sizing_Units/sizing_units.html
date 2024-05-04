@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+</head>
+<style>
+    /* Here are I use different sizing units for different uses  */
+    *{
+        margin: 0;
+       padding: 0;
+    }
+
+    html{
+        font-size: 12;
+    }
+    /* px(pixel) unit is being used  
+    .box{
+        box-sizing: border-box;
+        background-color: aquamarine;
+        color: blue;
+        width: 233px; 
+        border: 2px solid black;
+
+    }*/
+
+    /* vw(view width) unit is being used */
+    /* vh(view height) unit is being used */
+    .box{
+        box-sizing: border-box;
+        color: red;
+        border: 2px solid black;
+        width: 80vw;
+        height: 10vh;
+        margin: auto;
+        background-color: aquamarine;
+
+    }
+
+    .container{
+             box-sizing: border-box;
+             border: 2px solid black;
+             width: 80vw;
+             min-height: 80vh;
+             margin: 23px auto;
+             /* font-size: 18px; */
+             background-color: aqua;
+    }
+
+    /* em is relative length unit which take font length through parent font size */
+    /* And also % is used (generally it is not used) */
+    .container > div{
+             color: brown;
+             font-size: 1em;
+             border: 2px solid black;
+             width: 50%;
+    }
+
+    /* rem is also a relative length unit which take font length through root font size */
+    .container > div > div {
+          color: brown;
+          font-size: 2rem;
+          border: 2px solid ;
+    }
+
+
+    .cont{
+        /* vmin(view minimum) is being used for this device for mobile we use vmax(view maximum) */
+        box-sizing: border-box;
+        color: red;
+        border: 2px solid black;
+        background-color: yellow;
+        width: 100vmin;
+    }
+</style>
+<body>
+    <div class="box">
+        This code is best
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat ratione aspernatur odit dolorem suscipit ipsam atque veniam eos quaerat accusantium, repudiandae rem quod voluptas amet reprehenderit veritatis, reiciendis soluta molestias tenetur dolor, cupiditate assumenda ex. Odit maxime laboriosam debitis excepturi aperiam quis dignissimos nemo? Ea ex, earum explicabo corrupti atque possimus autem iure.
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reprehenderit ad dolorem, accusantium sed facilis doloribus quia iure corporis aut repellat? Culpa sequi facere sapiente repellendus, officiis dolores a consectetur cum provident deleniti quod suscipit hic accusantium labore commodi. Sit, tempora impedit! Accusantium, enim quas fuga harum a culpa exercitationem distinctio quam quisquam ea natus nihil qui labore!
+    </div>
+    </div>
+
+    <div class="cont">
+        Another container hai ye !!
+    </div>
+</body>
+</html>

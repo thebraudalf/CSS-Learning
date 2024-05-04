@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* There are many type of selectors in css you can know about those selectors through css documentation  */
+        /* Element Selectors */
+        div{
+            background-color: seashell;
+        }
+        
+        /* Class Selectors */
+        .pink{
+            background-color: pink;
+        }
+
+        /* Id Selectors */
+        #purple{
+            background-color: purple;
+        }
+
+        /* Child Selectors */
+        div > p{
+            background-color: aquamarine;
+        }
+
+        /* Descendent Selectors */
+        div p{
+            background-color: slateblue;
+        }
+
+        /* Universal Selectors */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color: red;
+        }
+
+        a:link{
+            color: blanchedalmond;
+        }
+
+        a:active{
+            background-color: aqua;
+        }
+        
+        a:hover{
+            background-color: blue;
+        }
+
+       p:first-child{
+        background-color: chocolate;
+       } 
+
+    </style>
+</head>
+<body>
+    <div>
+        I am happy to be great
+        <p>It would be great</p>
+    </div>
+<br>
+    <div class="pink">
+        And you should too
+        <article>
+            <p>It also would be the same</p>
+        </article>
+    </div>
+<br>
+    <div id="purple">
+        But I don't want too
+    </div>
+<br>
+    <ul>
+        <li><a href="https://www.X.com">Go to X</a></li>
+        <li><a href="https://www.facebook.com">Go to Facebook</a></li>
+    </ul>
+
+</body>
+</html>
